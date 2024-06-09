@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#accordian-background {
+  height: 100vh;
+  background-image: url("./assets/granite-backsplash.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#accordian-container {
+  width: 90%;
+  height: 80%;
+  background-image: url("./assets/pine-backslash.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#accordian-contents {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+
+  height: auto;
+  min-width: 450px;
+  max-width: 550px;
+}
+
+#accordian-contents,
+h1 {
+  display: flex;
+  justify-content: left;
+  margin: 15px;
+}
+
+button {
+  border: none;
+  outline: none;
+  line-height: 60px;
+  background-color: white;
+  border-top: 1px solid lightgray;
+  max-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.panel {
+  overflow: scroll;
+}
+
+span {
+  font-size: 22px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 520px) {
+  .container {
+    width: 100%;
+    height: auto;
+  }
+}
